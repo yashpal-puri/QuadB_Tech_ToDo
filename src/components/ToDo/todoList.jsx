@@ -7,7 +7,7 @@ const TodoList = () => {
     const  todos =useSelector((state) => state.todos);
     const Dispatch=useDispatch();
     useEffect(()=>{
-        localtodos && localtodos.length > 1 ? Dispatch(setLocalTodos(localtodos)) : null;
+        localtodos && localtodos.length > 0 ? Dispatch(setLocalTodos(localtodos)) : null;
     },[])
     
     
